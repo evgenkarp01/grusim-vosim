@@ -232,11 +232,11 @@ section{
             }
         }
         .sldr-magnific-slick{
+            width: 100%;
             .item{
                 max-height: 290px;
                 overflow: hidden;
                 display: inline-block;
-                margin: 0 2px;
                 a{
                     img{
                         max-width: 360px;
@@ -244,7 +244,8 @@ section{
                         height: auto;
                         position: relative;
                         filter: brightness(60%);
-                        @incude trans();
+                        margin: 0 10px;
+                        @include trans();
                         &:hover{
                             filter: brightness(100%);
                         }
@@ -259,7 +260,8 @@ section{
         width: 100%;
         background-image: linear-gradient(145deg, #CFDEFA 0%, #C7D6F0 99.86%);
         .oplet{
-            
+            position: relative;
+            z-index: 2;
         }
         ul{
             li{
@@ -281,7 +283,9 @@ section{
             }
         }
         .stock{
-             text-align: center;
+            text-align: center;
+            position: relative;
+            z-index: 2;
             p{
                 font-size: rem(22);
                 font-weight: bold;
@@ -343,4 +347,97 @@ footer{
     border-bottom: 660px solid #e1e6ec;
     border-left: 640px solid transparent;
     right: 0;
+}
+.slick-dots li button:before{
+    width: 24px;
+    height: 8px;
+    background: $btn-color;
+    font-size: 0;
+}
+.slick-dots{
+    margin-top: 30px;
+}
+.image-source-link {
+	color: #98C3D1;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+
+
+$bgcolor-form: #c2d7ff;
+.window-modal{
+    max-width: 550px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    min-height: 300px;
+    border-radius: 8px;
+    padding: 30px 25px;
+    background: $bgcolor-form;
+    form{
+        .logo-form{
+            img{
+                width: 80px;
+                height: 54px;
+            }
+        }
+        h2{
+            text-align: center;
+            font-size: 26px;
+        }
+        .flex-form{
+            display: flex;
+            flex-direction: column;
+            input{
+                margin-bottom: 10px;
+                height: 35px;
+                width: 100%;
+                color: #000;
+                border: 1px solid #272727;
+                border-radius: 3px;
+                padding: 0 15px;
+                background: none;
+                &:first-child{
+                    margin-top: 20px;
+                }
+            }
+            .btn{
+                margin-top: 35px;
+                button{}
+            }
+        }
+    }
+}
+.persd-sogl{
+    margin: 15px 10px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    a{
+        color: $link-color;
+        text-decoration: underline;
+    }
 }

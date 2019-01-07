@@ -11,21 +11,21 @@ use PHPMailer\PHPMailer\Exception;
 
 $mail = new PHPMailer;
 	$sendto   = "evgenkarp01@ya.ru";
-	$usermail = "noreply@bosch-rostov.ru";
-    $mail->setFrom($usermail, 'Обработчик почты motors.bosch-rostov.ru');
-    $mail->addAddress($sendto,'Landing Page Bosch');
-    $mail->addReplyTo($sendto,'Landing Page Bosch');
+	$usermail = "noreply@grusim-vosim.ru";
+    $mail->setFrom($usermail, 'Обработчик почты grusim-vosim.ru');
+    $mail->addAddress($sendto,'Грузим Возим');
+    $mail->addReplyTo($sendto,'Грузим Возим');
 
 
      $mail->isHTML(true);   
 
 
-		$siteName = "Landing Page Bosch";
-		$siteUrl = "motors.bosch-rostov.ru";
-		$subject  = "Новое сообщение - с сайта motors.bosch-rostov.ru";
+		$siteName = "Грузим Возим";
+		$siteUrl = "grusim-vosim.ru";
+		$subject  = "Новое сообщение - с сайта grusim-vosim.ru";
 		$thema = "Модальное окно/сообщение";
 		$resultat = "Мы свяжемся с вами в ближайшее время";
-		$colorBg = '#419CD4';
+		$colorBg = '#1a8100';
 
 
 
