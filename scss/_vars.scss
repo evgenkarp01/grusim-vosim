@@ -1,18 +1,21 @@
-$bg-color:#b4eaff;
+$bg-color:rgba(26,129,0,0.6);
 $wt:#fff;
 $bk:#000;
 $accent-color:#3aa2cc;
-$ttl-fz:36px;
-$fz: rem(16);
-$btn-color: #cb1436;
+$ttl-fz:22;
+$fz:16;
+$btn-color: #CD4F0A;
+$box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 $browser-context: 16; // Default
 $dir:'../fonts/';
-$Ob: 'OpenSans-Bold';
-$Oi: 'OpenSans-Italic';
-$Ol: 'OpenSans-Light';
-$O: 'OpenSans-Regular';
-$Osb: 'OpenSans-SemiBold';
-$ON: 'Open Sans';
+$Cbk: 'Circe-ExtraBold';
+$Cb: 'Circe-Bold';
+$Cl: 'Circe-Light';
+$C: 'Circe-Regular';
+$Db: 'DINPro-CondensedBold';
+$CN: 'Circe';
+$font-name: $CN;
+$DN: 'DIN Pro';
 $normal: normal;
 $italic: italic;
 $bold: bold;
@@ -21,13 +24,13 @@ $medium: 500;
 $heavy: 800;
 $black: 900;
 $light: 300;
-$mt:80px;
-$mb:50px;
+$mt:88px;
+$mb:45px;
+$placeholder: #000;
 @function rem($pixels, $context: $browser-context) {
     @return #{$pixels/$context}rem;
     //font-size: rem(VAR);
 }
-
 @mixin font($fontname, $fweight, $fstyle, $fontfamily){
     @font-face {
         font-family: $fontfamily;
@@ -38,3 +41,11 @@ $mb:50px;
         font-style: $fstyle;
     }
 }
+@mixin trans(){
+    transition: all 0.4s;
+}
+@include font($Cbk, $black, $normal, $CN);
+@include font($Cb, $bold, $normal, $CN);
+@include font($Cl, $light, $normal, $CN);
+@include font($C, $normal, $normal, $CN);
+@include font($Db, $bold, $normal, $DN);

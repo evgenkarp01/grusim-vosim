@@ -16,14 +16,6 @@ article, aside, details, main, figcaption, figure, footer, header, hgroup, menu,
 body { 
 	margin: 0px;
 	padding: 0px;
-	font-family: Arial, Tahoma, sans-serif;
-	line-height: 1;
-	background-color: #ffffff;
-	height: 100%;
-	position: relative;
-	font-size: 14px ;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 	}
 
 blockquote, q { 
@@ -108,36 +100,36 @@ a {
 	}
 
 input::-webkit-input-placeholder {
-  color: $wt;
-  font-size: rem(16);
+  color: $placeholder;
+  font-size: rem(14);
 }
 input::-moz-placeholder {
-  color: $wt;
-  font-size: rem(16);
+  color: $placeholder;
+  font-size: rem(14);
 }
 input:-moz-placeholder {
-  color: $wt;
-  font-size: rem(16);
+  color: $placeholder;
+  font-size: rem(14);
 }
 input:-ms-input-placeholder {
-  color: $wt;
-  font-size: rem(16);
+  color: $placeholder;
+  font-size: rem(14);
 }
 textarea::-webkit-input-placeholder {
-  color: $wt;
-  font-size: rem(16);
+  color: $placeholder;
+  font-size: rem(14);
 }
 textarea::-moz-placeholder {
-  color: $wt;
-  font-size: rem(16);
+  color: $placeholder;
+  font-size: rem(14);
 }
 textarea:-moz-placeholder {
-  color: $wt;
-  font-size: rem(16);
+  color: $placeholder;
+  font-size: rem(14);
 }
 textarea:-ms-input-placeholder {
-  color: $wt;
-  font-size: rem(16);
+  color: $placeholder;
+  font-size: rem(14);
 }
 input:focus, textarea:focus{
     border-color: #2172a2 !important;
@@ -173,12 +165,12 @@ input:focus, textarea:focus{
   width: 11px;
 }
 body { 
-    font-family: $ON, Tahoma, sans-serif;
-    line-height: 1;
+    font-family: $font-name, Tahoma, sans-serif;
+    line-height: 1.4rem;
     background-color: #ffffff;
     height: 100%;
     position: relative;
-    font-size: $fz;
+    font-size: rem(16);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -199,8 +191,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     h1{
-        font-size: rem(24);
-        font-weight: bold;
+        font-size: rem(42);
+        font-weight: 900;
+        line-height: rem(45);
     }
     h2{
         font-size: rem(22);
@@ -233,9 +226,9 @@ body {
     }
 }
 
-.marg-block{
+.mb{
     margin-top: $mb;
 }
-.marg-ttl{
+.mt{
     margin-top: $mt;
 }
